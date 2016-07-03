@@ -1,0 +1,4 @@
+UltrasonicProximitySensor	KEYWORD1
+setMaximumDistanceToCheckInCm	KEYWORD2
+getMaximumDistanceToCheckInCm	KEYWORD2
+getDistanceInCm	KEYWORD2
