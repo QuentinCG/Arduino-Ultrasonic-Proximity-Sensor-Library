@@ -1,4 +1,5 @@
 # Ultrasonic Proximity Sensor Library for Arduino
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/92ca10ab286440ecb7de56e4e7d90347)](https://www.codacy.com/manual/QuentinCG/Arduino-Ultrasonic-Proximity-Sensor-Library?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=QuentinCG/Arduino-Ultrasonic-Proximity-Sensor-Library&amp;utm_campaign=Badge_Grade)
 
 ## What is it
 
