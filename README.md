@@ -18,12 +18,12 @@ It was tested with HC-SR04 device but it should be usable with equivalent sensor
 
 ## How to connect the sensor to your Arduino
 
-Ultrasonic proximity sensor | Arduino                       |
---------                    | --------                      |
-VCC                         | 5V                            |
-GND                         | GND                           |
-Echo                        | D2 (or any other digital pin) |
-Trigger                     | D3 (or any other digital pin) |
+|Ultrasonic proximity sensor|Arduino  |
+|--------|--------                    |
+|VCC|5V                               |
+|GND|GND                              |
+|Echo|D2 (or any other digital pin)   |
+|Trigger|D3 (or any other digital pin)|
 
 <img src="schematics.png" width="400">
 
