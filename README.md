@@ -34,7 +34,7 @@ One example is provided with this library:
 
 ### Show distance between the sensor and any element every second
 
-<a target="_blank" href="https://github.com/QuentinCG/Arduino-Ultrasonic-Proximity-Sensor-Library/blob/master/UltrasonicProximitySensor/examples/ShowDistanceInSerial/ShowDistanceInSerial.ino">Link to source code</a>
+<a target="_blank" href="https://github.com/QuentinCG/Arduino-Ultrasonic-Proximity-Sensor-Library/blob/master/examples/ShowDistanceInSerial/ShowDistanceInSerial.ino">Link to source code</a>
 
 ## License
 
