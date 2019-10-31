@@ -3,7 +3,7 @@ sudo: false
 
 env:
   global:
-  - PRETTYNAME="Hygrometer Sensor (Rain Drop and Soil Moisture)"
+  - PRETTYNAME="Ultrasonic Proximity Sensor (HC-SR04, ...)"
 
 before_install:
 - source <(curl -SLs https://raw.githubusercontent.com/adafruit/travis-ci-arduino/master/install.sh)
