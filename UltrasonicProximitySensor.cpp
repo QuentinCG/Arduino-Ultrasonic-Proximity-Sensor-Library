@@ -10,11 +10,12 @@
 
 #include "UltrasonicProximitySensor.h"
 
-UltrasonicProximitySensor::UltrasonicProximitySensor(int pin_trigger, int pin_echo)
+UltrasonicProximitySensor::UltrasonicProximitySensor(int pin_trigger, int pin_echo) :
+  _pin_trigger(pin_trigger),
+  _pin_echo(pin_echo),
+  _max_distance_in_cm(0),
+  _timeout(0)
 {
-  _pin_trigger = pin_trigger;
-  _pin_echo = pin_echo;
-
   pinMode(_pin_trigger, OUTPUT);
   pinMode(_pin_echo, INPUT);
 
