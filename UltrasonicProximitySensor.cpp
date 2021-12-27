@@ -2,9 +2,9 @@
  * \brief Get distance by using an ultrasonic proximity sensor (implementation)
  *
  * \author Quentin Comte-Gaz <quentin@comte-gaz.com>
- * \date 3 July 2016
+ * \date 27 December 2021
  * \license MIT License (contact me if too restrictive)
- * \copyright Copyright (c) 2016 Quentin Comte-Gaz
+ * \copyright Copyright (c) 2021 Quentin Comte-Gaz
  * \version 1.0
  */
 
@@ -24,7 +24,8 @@ UltrasonicProximitySensor::UltrasonicProximitySensor(int pin_trigger, int pin_ec
 
 bool UltrasonicProximitySensor::setMaximumDistanceToCheckInCm(unsigned long max_distance_in_cm)
 {
-  if (max_distance_in_cm == 0) {
+  if (max_distance_in_cm == 0)
+  {
     return false;
   }
 
@@ -50,8 +51,9 @@ unsigned long UltrasonicProximitySensor::getDistanceInCm() const
   sendTrigger();
   ditance_in_cm = waitEcho();
 
-  if (ditance_in_cm == 0 || ditance_in_cm > _max_distance_in_cm) {
-    return 0;
+  if (ditance_in_cm > _max_distance_in_cm)
+  {
+    ditance_in_cm = 0;
   }
 
   return ditance_in_cm;
@@ -91,7 +93,8 @@ void UltrasonicProximitySensor::sendTrigger() const
 unsigned long UltrasonicProximitySensor::waitEcho() const
 {
   unsigned long time_echo = pulseIn(_pin_echo, HIGH, _timeout);
-  if (time_echo == 0) {
+  if (time_echo == 0)
+  {
     return 0;
   }
 
