@@ -5,9 +5,9 @@
  * This value can be increased or reduced by calling \p setMaximumDistanceToCheckInCm().
  *
  * \author Quentin Comte-Gaz <quentin@comte-gaz.com>
- * \date 3 July 2016
+ * \date 27 December 2021
  * \license MIT License (contact me if too restrictive)
- * \copyright Copyright (c) 2016 Quentin Comte-Gaz
+ * \copyright Copyright (c) 2021 Quentin Comte-Gaz
  * \version 1.0
  */
 
@@ -60,9 +60,6 @@ class UltrasonicProximitySensor
      * \return (unsigned long) Distance between the sensor and any element (in cm)
      */
     unsigned long getDistanceInCm() const;
-
-
-
 
   private:
     static unsigned long usToCm(unsigned long time_in_us); /*!< microSec to Cm conversion */
